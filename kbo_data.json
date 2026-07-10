@@ -2,9 +2,93 @@
   {
     "id": "sajik",
     "name": "사직야구장",
-    "homeTeam": "롯데",
+    "homeTeam": "롯데 자이언츠",
     "lat": 35.1944,
     "lng": 129.061,
+    "forecast": [
+      {
+        "label": "오늘",
+        "date": "07/10",
+        "weather": {
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#a0aec0"
+        },
+        "hasGame": true,
+        "gameInfo": "vs KIA<br>18:30"
+      },
+      {
+        "label": "내일",
+        "date": "07/11",
+        "weather": {
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#a0aec0"
+        },
+        "hasGame": true,
+        "gameInfo": "vs KIA<br>18:30"
+      },
+      {
+        "label": "모레",
+        "date": "07/12",
+        "weather": {
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#a0aec0"
+        },
+        "hasGame": false,
+        "gameInfo": "경기 없음"
+      }
+    ]
+  },
+  {
+    "id": "jamsil",
+    "name": "잠실야구장",
+    "homeTeam": "LG / 두산",
+    "lat": 37.5122,
+    "lng": 127.0719,
+    "forecast": [
+      {
+        "label": "오늘",
+        "date": "07/10",
+        "weather": {
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#a0aec0"
+        },
+        "hasGame": true,
+        "gameInfo": "vs SSG<br>18:30"
+      },
+      {
+        "label": "내일",
+        "date": "07/11",
+        "weather": {
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
+        },
+        "hasGame": true,
+        "gameInfo": "vs SSG<br>18:30"
+      },
+      {
+        "label": "모레",
+        "date": "07/12",
+        "weather": {
+          "cond": "맑음",
+          "icon": "fa-sun",
+          "color": "#ecc94b"
+        },
+        "hasGame": false,
+        "gameInfo": "경기 없음"
+      }
+    ]
+  },
+  {
+    "id": "changwon",
+    "name": "창원 NC 파크",
+    "homeTeam": "NC 다이노스",
+    "lat": 35.2232,
+    "lng": 128.583,
     "forecast": [
       {
         "label": "오늘",
@@ -15,90 +99,6 @@
           "color": "#ecc94b"
         },
         "hasGame": true,
-        "gameInfo": "vs KIA<br>18:30"
-      },
-      {
-        "label": "내일",
-        "date": "07/11",
-        "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
-        },
-        "hasGame": true,
-        "gameInfo": "vs KIA<br>18:30"
-      },
-      {
-        "label": "모레",
-        "date": "07/12",
-        "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
-        },
-        "hasGame": false,
-        "gameInfo": "경기 없음"
-      }
-    ]
-  },
-  {
-    "id": "jamsil",
-    "name": "잠실야구장",
-    "homeTeam": "LG/두산",
-    "lat": 37.5122,
-    "lng": 127.0719,
-    "forecast": [
-      {
-        "label": "오늘",
-        "date": "07/10",
-        "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
-        },
-        "hasGame": true,
-        "gameInfo": "vs SSG<br>18:30"
-      },
-      {
-        "label": "내일",
-        "date": "07/11",
-        "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
-        },
-        "hasGame": true,
-        "gameInfo": "vs SSG<br>18:30"
-      },
-      {
-        "label": "모레",
-        "date": "07/12",
-        "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
-        },
-        "hasGame": false,
-        "gameInfo": "경기 없음"
-      }
-    ]
-  },
-  {
-    "id": "changwon",
-    "name": "창원 NC 파크",
-    "homeTeam": "NC",
-    "lat": 35.2232,
-    "lng": 128.583,
-    "forecast": [
-      {
-        "label": "오늘",
-        "date": "07/10",
-        "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
-        },
-        "hasGame": true,
         "gameInfo": "vs 삼성<br>18:30"
       },
       {
@@ -116,9 +116,9 @@
         "label": "모레",
         "date": "07/12",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         },
         "hasGame": false,
         "gameInfo": "경기 없음"
@@ -128,7 +128,7 @@
   {
     "id": "gocheok",
     "name": "고척 스카이돔",
-    "homeTeam": "키움",
+    "homeTeam": "키움 히어로즈",
     "lat": 37.4982,
     "lng": 126.8671,
     "forecast": [
@@ -169,8 +169,8 @@
   },
   {
     "id": "gwangju",
-    "name": "광주 챔피언스필드",
-    "homeTeam": "KIA",
+    "name": "광주-기아 챔피언스 필드",
+    "homeTeam": "KIA 타이거즈",
     "lat": 35.1682,
     "lng": 126.8891,
     "forecast": [
@@ -178,9 +178,9 @@
         "label": "오늘",
         "date": "07/10",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#a0aec0"
         },
         "hasGame": true,
         "gameInfo": "vs 롯데<br>18:30"
@@ -189,12 +189,180 @@
         "label": "내일",
         "date": "07/11",
         "weather": {
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#a0aec0"
+        },
+        "hasGame": true,
+        "gameInfo": "vs 롯데<br>18:30"
+      },
+      {
+        "label": "모레",
+        "date": "07/12",
+        "weather": {
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#a0aec0"
+        },
+        "hasGame": false,
+        "gameInfo": "경기 없음"
+      }
+    ]
+  },
+  {
+    "id": "daegu",
+    "name": "대구 삼성 라이온즈 파크",
+    "homeTeam": "삼성 라이온즈",
+    "lat": 35.8412,
+    "lng": 128.6816,
+    "forecast": [
+      {
+        "label": "오늘",
+        "date": "07/10",
+        "weather": {
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#a0aec0"
+        },
+        "hasGame": true,
+        "gameInfo": "vs NC<br>18:30"
+      },
+      {
+        "label": "내일",
+        "date": "07/11",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        },
+        "hasGame": true,
+        "gameInfo": "vs NC<br>18:30"
+      },
+      {
+        "label": "모레",
+        "date": "07/12",
+        "weather": {
+          "cond": "맑음",
+          "icon": "fa-sun",
+          "color": "#ecc94b"
+        },
+        "hasGame": false,
+        "gameInfo": "경기 없음"
+      }
+    ]
+  },
+  {
+    "id": "daejeon",
+    "name": "대전 한화생명 이글스파크",
+    "homeTeam": "한화 이글스",
+    "lat": 36.3172,
+    "lng": 127.4292,
+    "forecast": [
+      {
+        "label": "오늘",
+        "date": "07/10",
+        "weather": {
           "cond": "맑음",
           "icon": "fa-sun",
           "color": "#ecc94b"
         },
         "hasGame": true,
-        "gameInfo": "vs 롯데<br>18:30"
+        "gameInfo": "vs 키움<br>18:30"
+      },
+      {
+        "label": "내일",
+        "date": "07/11",
+        "weather": {
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#a0aec0"
+        },
+        "hasGame": true,
+        "gameInfo": "vs 키움<br>18:30"
+      },
+      {
+        "label": "모레",
+        "date": "07/12",
+        "weather": {
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#a0aec0"
+        },
+        "hasGame": false,
+        "gameInfo": "경기 없음"
+      }
+    ]
+  },
+  {
+    "id": "incheon",
+    "name": "인천 SSG 랜더스필드",
+    "homeTeam": "SSG 랜더스",
+    "lat": 37.4371,
+    "lng": 126.6933,
+    "forecast": [
+      {
+        "label": "오늘",
+        "date": "07/10",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        },
+        "hasGame": true,
+        "gameInfo": "vs LG<br>18:30"
+      },
+      {
+        "label": "내일",
+        "date": "07/11",
+        "weather": {
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#a0aec0"
+        },
+        "hasGame": true,
+        "gameInfo": "vs LG<br>18:30"
+      },
+      {
+        "label": "모레",
+        "date": "07/12",
+        "weather": {
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
+        },
+        "hasGame": false,
+        "gameInfo": "경기 없음"
+      }
+    ]
+  },
+  {
+    "id": "suwon",
+    "name": "수원 kt 위즈파크",
+    "homeTeam": "kt 위즈",
+    "lat": 37.2998,
+    "lng": 127.0101,
+    "forecast": [
+      {
+        "label": "오늘",
+        "date": "07/10",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        },
+        "hasGame": true,
+        "gameInfo": "vs 두산<br>18:30"
+      },
+      {
+        "label": "내일",
+        "date": "07/11",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        },
+        "hasGame": true,
+        "gameInfo": "vs 두산<br>18:30"
       },
       {
         "label": "모레",
