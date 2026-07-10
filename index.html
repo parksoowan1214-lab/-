@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전국 야구장 기상 및 경기 상태 대시보드</title>
+    <!-- Leaflet CSS for Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-color: #f4f6f9;
+            --card-bg: #ffffff;
+            --text-main: #2d3748;
+            --text-muted: #718096;
+            --primary: #1a365d;
+            --accent: #d69e2e;
+            --success: #38a169;
+            --warning: #dd6b20;
+            --danger: #e53e3e;
+            --info: #3182ce;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            color: white;
+            padding: 1.5rem 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo p {
+            font-size: 0.85rem;
+            color: #94a3b8;
+            margin-top: 0.2rem;
+        }
+
+        /* 컨트롤러 구역 */
+        .sim-controls {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .sim-controls label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #cbd5e1;
+        }
+
+        .sim-btn {
+            background: rgba(255, 255, 255, 0.15);
+            border: none;
+            color: white;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+
+        .sim-btn.active {
+            background-color: var(--accent);
+            color: #0f172a;
+            font-weight: 700;
+        }
+
+        /* 메인 레이아웃 */
+        .main-container {
+            max-width: 1400px;
+            width: 100%;
+            margin: 1.5rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            flex-grow: 1;
+        }
+
+        @media (min-width: 1024px) {
+            .main-container {
+                grid-template-columns: 1.2fr 1fr;
+            }
+        }
+
+        /* 왼쪽 컬럼: 대시보드 리스트 */
+        .dashboard-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* 즐겨찾기 구역 */
+        .fav-section {
+            background: linear-gradient(135deg, #fefcbf, #faf089);
+            border: 1px solid #f6e05e;
+            border-radius: 12px;
+            padding: 1.2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+        }
+
+        .fav-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+
+        @media (min-width: 640px) {
+            .fav-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .no-fav-msg {
+            color: #744210;
+            font-size: 0.9rem;
+            text-align: center;
+            padding: 1rem;
+            grid-column: 1 / -1;
+        }
+
+        /* 구장 카드 그리드 */
+        .stadium-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+
+        @media (min-width: 640px) {
+            .stadium-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .stadium-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            padding: 1.2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+
+        .stadium-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .stadium-card.active-selected {
+            border: 2px solid var(--info);
+            background-color: #f0fdf4;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.8rem;
+        }
+
+        .team-name {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .stadium-name {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #1a202c;
+            margin-top: 0.1rem;
+        }
+
+        .fav-toggle {
+            background: none;
+            border: none;
+            color: #cbd5e1;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: color 0.2s;
+            padding: 0.2rem;
+        }
+
+        .fav-toggle.is-fav {
+            color: #ecc94b;
+        }
+
+        .weather-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 0.8rem 0;
+            background-color: #f7fafc;
+            padding: 0.6rem;
+            border-radius: 8px;
+        }
+
+        .weather-icon {
+            font-size: 1.8rem;
+            width: 40px;
+            text-align: center;
+        }
+
+        .weather-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .weather-cond {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .weather-rain {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .status-badge {
+            align-self: flex-start;
+            padding: 0.35rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            margin-top: 0.5rem;
+        }
+
+        /* 상태별 배지 색상 */
+        .status-play { background-color: #c6f6d5; color: #22543d; }
+        .status-delay { background-color: #feebc8; color: #744210; }
+        .status-cancel-risk { background-color: #fed7d7; color: #742a2a; }
+        .status-dome { background-color: #e2e8f0; color: #2d3748; }
+
+        /* 오른쪽 컬럼: 지도 및 기준 안내 */
+        .map-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            position: sticky;
+            top: 1.5rem;
+            height: fit-content;
+        }
+
+        #map {
+            height: 450px;
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            z-index: 1;
+        }
+
+        .info-criteria {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            padding: 1.2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .info-criteria h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .criteria-list {
+            list-style: none;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .criteria-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        .criteria-list i {
+            margin-top: 0.2rem;
+        }
+
+        footer {
+            background-color: #0f172a;
+            color: #94a3b8;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.85rem;
+            margin-top: auto;
+            border-top: 1px solid #334155;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1><i class="fa-solid fa-baseball-bat-ball"></i> KBO 구장별 기상 대시보드</h1>
+                <p>실시간 날씨 시뮬레이션 및 경기 개시 가능 여부 판별기 (GitHub Pages 호스팅용)</p>
+            </div>
+            <div class="sim-controls">
+                <label><i class="fa-solid fa-cloud-sun-rain"></i> 기상 시뮬레이터:</label>
+                <button class="sim-btn active" onclick="changeWeather('clear', this)">맑음 (0mm)</button>
+                <button class="sim-btn" onclick="changeWeather('light', this)">약한 비 (2mm)</button>
+                <button class="sim-btn" onclick="changeWeather('heavy', this)">강한 비 (7mm)</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- 왼쪽 패널: 대시보드 카드 목록 -->
+        <div class="dashboard-panel">
+            
+            <!-- 즐겨찾기 구장 구역 -->
+            <div>
+                <div class="section-title">
+                    <i class="fa-solid fa-star" style="color: #ecc94b;"></i> 즐겨찾는 구장 (My Team)
+                </div>
+                <div class="fav-section">
+                    <div id="fav-container" class="fav-container">
+                        <div class="no-fav-msg">카드의 별 아이콘을 클릭하여 선호하는 팀/구장을 고정해 보세요!</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 전체 구장 상태 구역 -->
+            <div>
+                <div class="section-title">
+                    <i class="fa-solid fa-list"></i> 전국 야구장 기상 및 경기 현황
+                </div>
+                <div id="stadium-grid" class="stadium-grid">
+                    <!-- JS로 카드 자동 생성 -->
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 오른쪽 패널: 지도 및 취소 기준 안내 -->
+        <div class="map-panel">
+            <div class="section-title">
+                <i class="fa-solid fa-map-location-dot"></i> 전국 구장 위치 지도
+            </div>
+            <!-- 실시간 지도가 표시될 영역 -->
+            <div id="map"></div>
+
+            <!-- KBO 우천 취소 규정 가이드 -->
+            <div class="info-criteria">
+                <h3><i class="fa-solid fa-circle-info"></i> KBO 우천 취소(우취) 판단 가이드</h3>
+                <ul class="criteria-list">
+                    <li><i class="fa-solid fa-circle-check text-success"></i> 경기 개시 3시간 전 기상 상황을 고려하여 경기운영위원이 취소 여부를 결정합니다.</li>
+                    <li><i class="fa-solid fa-clock text-warning"></i> <strong>강수량 1~4mm (지연/대기):</strong> 경기 진행은 가능하나 그라운드 정비 및 소강상태 대기로 개시가 연기될 수 있습니다.</li>
+                    <li><i class="fa-solid fa-cloud-showers-heavy text-danger"></i> <strong>강수량 5mm 이상 (취소 유력):</strong> 정상적인 경기 진행 및 관람객 안전이 대단히 엄중하여 우천 취소 가능성이 매우 높습니다.</li>
+                    <li><i class="fa-solid fa-gopuram text-info"></i> <strong>고척 스카이돔 특이사항:</strong> 돔구장 특성상 실내 경기가 진행되므로 외부 폭우나 기상 재해 상황이 아니면 기상 취소가 없습니다.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 KBO 기상 대시보드 프로젝트. 브라우저 LocalStorage를 사용해 즐겨찾기 상태가 유지됩니다.</p>
+    </footer>
+
+    <!-- Leaflet JS for Map -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script>
+        // 야구장 데이터 정의 (팀명, 구장이름, 위도, 경도, 돔구장 여부)
+        const stadiumsData = [
+            { id: 'sajik', team: "롯데 자이언츠", name: "사직야구장", lat: 35.1944, lng: 129.0610, dome: false },
+            { id: 'jamsil', team: "LG 트윈스 / 두산 베어스", name: "잠실야구장", lat: 37.5122, lng: 127.0719, dome: false },
+            { id: 'gwangju', team: "KIA 타이거즈", name: "광주-기아 챔피언스 필드", lat: 35.1682, lng: 126.8891, dome: false },
+            { id: 'changwon', team: "NC 다이노스", name: "창원 NC 파크", lat: 35.2232, lng: 128.5830, dome: false },
+            { id: 'daegu', team: "삼성 라이온즈", name: "대구 삼성 라이온즈 파크", lat: 35.8412, lng: 128.6816, dome: false },
+            { id: 'daejeon', team: "한화 이글스", name: "대전 한화생명 이글스파크", lat: 36.3172, lng: 127.4292, dome: false },
+            { id: 'incheon', team: "SSG 랜더스", name: "인천 SSG 랜더스필드", lat: 37.4371, lng: 126.6933, dome: false },
+            { id: 'suwon', team: "kt 위즈", name: "수원 kt 위즈파크", lat: 37.2998, lng: 127.0101, dome: false },
+            { id: 'gocheok', team: "키움 히어로즈", name: "고척 스카이돔", lat: 37.4982, lng: 126.8671, dome: true }
+        ];
+
+        // 초기 상태 값들
+        let currentCondition = 'clear'; // 'clear' | 'light' | 'heavy'
+        let favorites = JSON.parse(localStorage.getItem('kbo_fav_stadiums')) || [];
+        let map;
+        let markers = {};
+
+        // 날씨 모드별 세부 정보 매핑
+        const weatherConfigs = {
+            clear: { condText: "맑음 / 흐림", rainText: "시간당 강수량: 0mm", icon: "fa-sun", color: "#ecc94b" },
+            light: { condText: "약한 비", rainText: "시간당 강수량: 2mm", icon: "fa-cloud-rain", color: "#4299e1" },
+            heavy: { condText: "강한 폭우", rainText: "시간당 강수량: 7mm", icon: "fa-cloud-showers-heavy", color: "#e53e3e" }
+        };
+
+        // 지도 초기화 함수
+        function initMap() {
+            // 대한민국 중심점 위치로 지도 생성 (줌 레벨 7)
+            map = L.map('map').setView([36.3504, 127.3848], 7);
+            
+            // OpenStreetMap 타일 레이어 추가
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; OpenStreetMap contributors'
+            }).addTo(map);
+
+            // 각 야구장에 마커 찍기
+            stadiumsData.forEach(stadium => {
+                const marker = L.marker([stadium.lat, stadium.lng]).addTo(map);
+                marker.bindPopup(`<b>${stadium.name}</b><br>${stadium.team}`);
+                
+                // 마커 클릭 시 해당 카드 요소로 부드럽게 스크롤 및 하이라이트 효과
+                marker.on('click', () => {
+                    const card = document.getElementById(`card-${stadium.id}`);
+                    if(card) {
+                        card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        document.querySelectorAll('.stadium-card').forEach(c => c.classList.remove('active-selected'));
+                        card.classList.add('active-selected');
+                    }
+                });
+
+                markers[stadium.id] = marker;
+            });
+        }
+
+        // 경기 상태 계산 로직 함수
+        function getGameStatus(stadium, condition) {
+            if (stadium.dome) {
+                return { text: "실내 경기 (우취 없음) ⚾", class: "status-dome" };
+            }
+            if (condition === 'clear') {
+                return { text: "정상 진행 (플레이볼!) ⚾", class: "status-play" };
+            } else if (condition === 'light') {
+                return { text: "경기 지연 / 대기 ⏳", class: "status-delay" };
+            } else if (condition === 'heavy') {
+                return { text: "우천 취소 유력 ☔", class: "status-cancel-risk" };
+            }
+            return { text: "정보 없음", class: "" };
+        }
+
+        // 대시보드 렌더링 함수
+        function renderDashboard() {
+            const grid = document.getElementById('stadium-grid');
+            const favContainer = document.getElementById('fav-container');
+            
+            grid.innerHTML = '';
+            favContainer.innerHTML = '';
+
+            let hasFavs = false;
+
+            stadiumsData.forEach(stadium => {
+                const isFav = favorites.includes(stadium.id);
+                const status = getGameStatus(stadium, currentCondition);
+                const config = weatherConfigs[stadium.dome ? 'clear' : currentCondition]; // 돔구장은 날씨 영향 제외(시각적)
+
+                const cardHTML = `
+                    <div class="stadium-card" id="card-${stadium.id}" onclick="focusStadium('${stadium.id}', ${stadium.lat}, ${stadium.lng})">
+                        <div>
+                            <div class="card-header">
+                                <div>
+                                    <div class="team-name">${stadium.team}</div>
+                                    <div class="stadium-name">${stadium.name}</div>
+                                </div>
+                                <button class="fav-toggle ${isFav ? 'is-fav' : ''}" onclick="toggleFavorite(event, '${stadium.id}')">
+                                    <i class="fa-${isFav ? 'solid' : 'regular'} fa-star"></i>
+                                </button>
+                            </div>
+                            <div class="weather-info">
+                                <div class="weather-icon" style="color: ${config.color}">
+                                    <i class="fa-solid ${config.icon}"></i>
+                                </div>
+                                <div class="weather-text">
+                                    <span class="weather-cond">${stadium.dome ? '돔구장 제어권 외' : config.condText}</span>
+                                    <span class="weather-rain">${stadium.dome ? '실내 상시 기후 최적' : config.rainText}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="status-badge ${status.class}">
+                            <i class="fa-solid ${stadium.dome ? 'fa-building' : (currentCondition==='clear'?'fa-circle-play':(currentCondition==='light'?'fa-hourglass-half':'fa-cloud-showers-heavy'))}"></i>
+                            ${status.text}
+                        </div>
+                    </div>
+                `;
+
+                // 즐겨찾기 탭 혹은 전체 탭에 카드 배치
+                if (isFav) {
+                    hasFavs = true;
+                    // 즐겨찾기 카드는 ID를 다르게 주어 복제본 분리 관리
+                    const favCardHTML = cardHTML.replace(`id="card-${stadium.id}"`, `id="fav-card-${stadium.id}"`);
+                    favContainer.innerHTML += favCardHTML;
+                }
+                grid.innerHTML += cardHTML;
+            });
+
+            if (!hasFavs) {
+                favContainer.innerHTML = '<div class="no-fav-msg">카드의 별 아이콘을 클릭하여 선호하는 팀/구장을 고정해 보세요!</div>';
+            }
+        }
+
+        // 특정 구장 카드 클릭 시 지도 중심 변경 및 팝업 오픈
+        function focusStadium(id, lat, lng) {
+            map.setView([lat, lng], 13);
+            markers[id].openPopup();
+            
+            document.querySelectorAll('.stadium-card').forEach(c => c.classList.remove('active-selected'));
+            const card = document.getElementById(`card-${id}`);
+            const favCard = document.getElementById(`fav-card-${id}`);
+            if(card) card.classList.add('active-selected');
+            if(favCard) favCard.classList.add('active-selected');
+        }
+
+        // 즐겨찾기 추가/제거 토글 제어 함수
+        function toggleFavorite(event, id) {
+            event.stopPropagation(); // 카드 자체 클릭 이벤트로 전파 차단
+            if (favorites.includes(id)) {
+                favorites = favorites.filter(favId => favId !== id);
+            } else {
+                favorites.push(id);
+            }
+            localStorage.setItem('kbo_fav_stadiums', JSON.stringify(favorites));
+            renderDashboard();
+        }
+
+        // 기상 시뮬레이터 상단 버튼 변경 제어 함수
+        function changeWeather(condition, btnElement) {
+            currentCondition = condition;
+            document.querySelectorAll('.sim-btn').forEach(btn => btn.classList.remove('active'));
+            btnElement.classList.add('active');
+            renderDashboard();
+        }
+
+        // 스크립트 로드 시 즉시 지도 및 데이터 렌더링
+        window.onload = () => {
+            initMap();
+            renderDashboard();
+        };
+    </script>
+</body>
+</html>
