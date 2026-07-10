@@ -25,12 +25,17 @@ weather_presets = [
 # ---------------------------------------------------------
 
 kbo_data = []
+# KBO 1군 전체 야구장 (9개 구장, 10개 구단) 정보
 stadiums = [
-    {"id": "sajik", "name": "사직야구장", "team": "롯데", "lat": 35.1944, "lng": 129.0610, "opp": "KIA"},
-    {"id": "jamsil", "name": "잠실야구장", "team": "LG/두산", "lat": 37.5122, "lng": 127.0719, "opp": "SSG"},
-    {"id": "changwon", "name": "창원 NC 파크", "team": "NC", "lat": 35.2232, "lng": 128.5830, "opp": "삼성"},
-    {"id": "gocheok", "name": "고척 스카이돔", "team": "키움", "lat": 37.4982, "lng": 126.8671, "opp": "한화", "dome": True},
-    {"id": "gwangju", "name": "광주 챔피언스필드", "team": "KIA", "lat": 35.1682, "lng": 126.8891, "opp": "롯데"}
+    {"id": "sajik", "name": "사직야구장", "team": "롯데 자이언츠", "lat": 35.1944, "lng": 129.0610, "opp": "KIA"},
+    {"id": "jamsil", "name": "잠실야구장", "team": "LG / 두산", "lat": 37.5122, "lng": 127.0719, "opp": "SSG"},
+    {"id": "changwon", "name": "창원 NC 파크", "team": "NC 다이노스", "lat": 35.2232, "lng": 128.5830, "opp": "삼성"},
+    {"id": "gocheok", "name": "고척 스카이돔", "team": "키움 히어로즈", "lat": 37.4982, "lng": 126.8671, "opp": "한화", "dome": True},
+    {"id": "gwangju", "name": "광주-기아 챔피언스 필드", "team": "KIA 타이거즈", "lat": 35.1682, "lng": 126.8891, "opp": "롯데"},
+    {"id": "daegu", "name": "대구 삼성 라이온즈 파크", "team": "삼성 라이온즈", "lat": 35.8412, "lng": 128.6816, "opp": "NC"},
+    {"id": "daejeon", "name": "대전 한화생명 이글스파크", "team": "한화 이글스", "lat": 36.3172, "lng": 127.4292, "opp": "키움"},
+    {"id": "incheon", "name": "인천 SSG 랜더스필드", "team": "SSG 랜더스", "lat": 37.4371, "lng": 126.6933, "opp": "LG"},
+    {"id": "suwon", "name": "수원 kt 위즈파크", "team": "kt 위즈", "lat": 37.2998, "lng": 127.0101, "opp": "두산"}
 ]
 
 # 가상의 3일치 데이터 생성
