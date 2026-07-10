@@ -4,7 +4,6 @@ import random
 
 now = datetime.now()
 
-# KBO 1군 전체 야구장 (address 데이터 추가, 북->남 정렬을 위해 lat 순)
 stadiums = [
     {"id": "jamsil", "name": "잠실야구장", "address": "서울 송파구", "team": "LG 트윈스 / 두산 베어스", "lat": 37.5122, "lng": 127.0719},
     {"id": "gocheok", "name": "고척 스카이돔", "address": "서울 구로구", "team": "키움 히어로즈", "lat": 37.4982, "lng": 126.8671, "dome": True},
@@ -17,66 +16,49 @@ stadiums = [
     {"id": "sajik", "name": "사직야구장", "address": "부산 동래구", "team": "롯데 자이언츠", "lat": 35.1944, "lng": 129.0610}
 ]
 
-weather_presets = [
-    {"cond": "맑음", "icon": "fa-sun", "color": "#ecc94b"},
-    {"cond": "구름많음", "icon": "fa-cloud-sun", "color": "#a0aec0"},
-    {"cond": "흐림", "icon": "fa-cloud", "color": "#718096"},
-    {"cond": "비", "icon": "fa-cloud-rain", "color": "#4299e1"}
-]
+def get_weather_icon(hour, base_cond):
+    is_night = hour >= 19 or hour < 6
+    if base_cond == "맑음":
+        return "fa-moon" if is_night else "fa-sun", "#6366f1" if is_night else "#ecc94b"
+    if base_cond == "구름많음":
+        return "fa-cloud-moon" if is_night else "fa-cloud-sun", "#94a3b8"
+    if base_cond == "흐림":
+        return "fa-cloud", "#718096"
+    return "fa-cloud-rain", "#4299e1"
 
-# 시간표 생성 (1시간 간격 및 18:30 추가)
 time_slots = []
 current_day = "오늘"
-
-# 1. 오늘 14:00 ~ 23:00 (중간에 18:30 껴넣기)
 for hour in range(14, 24, 1):
-    time_slots.append({"day_label": current_day, "time": f"{hour:02d}:00"})
+    time_slots.append({"day_label": current_day, "time": f"{hour:02d}:00", "hour": hour})
     if hour == 18:
-        time_slots.append({"day_label": current_day, "time": "18:30"})
+        time_slots.append({"day_label": current_day, "time": "18:30", "hour": 18})
 
-# 2. 내일 00:00 ~ 23:00
+# ... 내일/모레 로직은 동일 ...
 current_day = "내일"
 for hour in range(0, 24, 1):
-    time_slots.append({"day_label": current_day, "time": f"{hour:02d}:00"})
+    time_slots.append({"day_label": current_day, "time": f"{hour:02d}:00", "hour": hour})
 
-# 3. 모레 00:00 ~ 24:00 (24시를 편의상 다음날 00시로 표기)
 current_day = "모레"
 for hour in range(0, 24, 1):
-    time_slots.append({"day_label": current_day, "time": f"{hour:02d}:00"})
-time_slots.append({"day_label": "", "time": "24:00"})
+    time_slots.append({"day_label": current_day, "time": f"{hour:02d}:00", "hour": hour})
+time_slots.append({"day_label": "", "time": "24:00", "hour": 24})
 
 kbo_data = []
-
 for stadium in stadiums:
     hourly_forecast = []
-    base_weather = random.choice(weather_presets)
+    base_cond = random.choice(["맑음", "구름많음", "흐림", "비"])
     
     for slot in time_slots:
         if stadium.get("dome"):
-            w = {"cond": "실내(돔)", "icon": "fa-building", "color": "#3182ce"}
+            w = {"cond": "실내", "icon": "fa-building", "color": "#3182ce"}
         else:
-            if random.random() < 0.2:
-                base_weather = random.choice(weather_presets)
-            w = base_weather
+            if random.random() < 0.1: base_cond = random.choice(["맑음", "구름많음", "흐림", "비"])
+            icon, color = get_weather_icon(slot["hour"], base_cond)
+            w = {"cond": base_cond, "icon": icon, "color": color}
             
-        hourly_forecast.append({
-            "day_label": slot["day_label"],
-            "time": slot["time"],
-            "weather": w
-        })
+        hourly_forecast.append({"day_label": slot["day_label"], "time": slot["time"], "weather": w})
         
-    kbo_data.append({
-        "id": stadium["id"],
-        "name": stadium["name"],
-        "address": stadium["address"], # 새로 추가된 주소 데이터
-        "homeTeam": stadium["team"],
-        "lat": stadium["lat"],
-        "lng": stadium["lng"],
-        "hourly_forecast": hourly_forecast
-    })
+    kbo_data.append({"id": stadium["id"], "name": stadium["name"], "address": stadium["address"], "homeTeam": stadium["team"], "lat": stadium["lat"], "lng": stadium["lng"], "hourly_forecast": hourly_forecast})
 
-file_path = 'kbo_data.json'
-with open(file_path, 'w', encoding='utf-8') as f:
+with open('kbo_data.json', 'w', encoding='utf-8') as f:
     json.dump(kbo_data, f, ensure_ascii=False, indent=2)
-
-print(f"[{now.strftime('%H:%M:%S')}] 시간대별 기상 데이터 업데이트 완료!")
