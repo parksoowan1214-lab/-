@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KBO 구장별 3일 날씨 & 일정 플래너</title>
+    <title>KBO 구장별 기상 대시보드</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root { --bg-color: #f4f6f9; --card-bg: #ffffff; --text-main: #2d3748; --text-muted: #718096; --primary: #1a365d; }
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Pretendard', -apple-system, sans-serif; }
-        body { background-color: var(--bg-color); color: var(--text-main); }
+        body { background-color: var(--bg-color); color: var(--text-main); padding-bottom: 60px; /* 모바일 탭바 여백 */ }
         
         header { background: linear-gradient(135deg, #0f172a, #1e3a8a); color: white; padding: 1.5rem 2rem; }
         .header-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
@@ -17,63 +17,102 @@
         .logo p { font-size: 0.85rem; color: #94a3b8; margin-top: 0.2rem; }
         
         .main-container { max-width: 1400px; margin: 1.5rem auto; padding: 0 1rem; display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
-        @media (min-width: 1024px) { .main-container { grid-template-columns: 1.2fr 1fr; } }
         
         .list-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
-        .section-title { font-size: 1.2rem; font-weight: 700; color: var(--primary); }
-        .sort-select { padding: 0.4rem 0.8rem; border-radius: 8px; border: 1px solid #cbd5e1; cursor: pointer; }
+        .section-title { font-size: 1.2rem; font-weight: 700; color: var(--primary); margin-bottom: 1rem;}
+        .sort-select { padding: 0.4rem 0.8rem; border-radius: 8px; border: 1px solid #cbd5e1; cursor: pointer; outline: none; font-weight: 600;}
         
         .stadium-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
         @media (min-width: 640px) { .stadium-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (min-width: 1024px) { 
+            .stadium-grid { grid-template-columns: 1fr; } /* PC에선 맵과 좌우 배치 */
+            .main-container { grid-template-columns: 1.2fr 1fr; } 
+            body { padding-bottom: 0; }
+        }
         
-        .stadium-card { background-color: var(--card-bg); border-radius: 12px; border: 1px solid #e2e8f0; padding: 1.2rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); cursor: pointer; transition: transform 0.2s; }
+        .stadium-card { background-color: var(--card-bg); border-radius: 12px; border: 1px solid #e2e8f0; padding: 1.2rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); cursor: pointer; transition: transform 0.2s; overflow: hidden; position: relative;}
         .stadium-card:hover { transform: translateY(-2px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
         
-        .card-header { border-bottom: 1px solid #e2e8f0; padding-bottom: 0.8rem; margin-bottom: 1rem; }
+        .card-header { border-bottom: 1px solid #e2e8f0; padding-bottom: 0.8rem; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: flex-start;}
         .stadium-name { font-size: 1.1rem; font-weight: 700; color: #1a202c; }
-        .home-team { font-size: 0.85rem; color: var(--text-muted); font-weight: 600; margin-top: 0.2rem; }
+        .home-team { font-size: 0.85rem; color: var(--text-muted); font-weight: 600; margin-top: 0.3rem;}
         
-        /* 3일치 예보 그리드 */
-        .forecast-container { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; }
-        .day-col { background: #f8fafc; border-radius: 8px; padding: 0.8rem 0.5rem; text-align: center; display: flex; flex-direction: column; justify-content: space-between; height: 100%; border: 1px solid #f1f5f9; }
-        .day-col.today { background: #eff6ff; border-color: #bfdbfe; }
+        /* 즐겨찾기 버튼 */
+        .fav-btn { background: none; border: none; font-size: 1.2rem; color: #cbd5e1; cursor: pointer; transition: color 0.2s; }
+        .fav-btn.active { color: #ecc94b; }
         
-        .day-date { font-size: 0.8rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem; }
-        .day-weather { font-size: 0.85rem; margin-bottom: 0.8rem; display: flex; flex-direction: column; align-items: center; gap: 0.3rem; font-weight: 600; }
-        .day-weather i { font-size: 1.2rem; }
-        .day-game { font-size: 0.8rem; color: #475569; line-height: 1.4; font-weight: 600; }
-        .no-game { color: #94a3b8; font-weight: 400; }
+        .no-fav-msg { background: #fefcbf; color: #b7791f; padding: 1rem; border-radius: 8px; text-align: center; font-weight: 600; border: 1px dashed #d69e2e; grid-column: 1 / -1; }
 
+        /* 가로 스크롤 날씨 영역 */
+        .weather-scroll-container { display: flex; overflow-x: auto; gap: 0.8rem; padding-bottom: 0.5rem; scrollbar-width: thin; scrollbar-color: #cbd5e1 transparent; }
+        .weather-scroll-container::-webkit-scrollbar { height: 6px; }
+        .weather-scroll-container::-webkit-scrollbar-thumb { background-color: #cbd5e1; border-radius: 10px; }
+        
+        .time-col { background: #f8fafc; border-radius: 8px; padding: 0.8rem; text-align: center; min-width: 80px; border: 1px solid #f1f5f9; flex-shrink: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+        .time-col.new-day { border-left: 3px solid var(--info); background: #eff6ff; }
+        .day-label { font-size: 0.7rem; color: var(--primary); font-weight: 800; margin-bottom: 0.2rem; }
+        .time-label { font-size: 0.9rem; font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem; }
+        .time-weather { font-size: 0.8rem; font-weight: 600; display: flex; flex-direction: column; gap: 0.3rem; }
+        .time-weather i { font-size: 1.3rem; }
+
+        /* 지도 및 모바일 탭바 */
         #map { height: 600px; width: 100%; border-radius: 12px; border: 1px solid #e2e8f0; z-index: 1; position: sticky; top: 1.5rem; }
+        .mobile-tab-bar { display: none; }
+        
+        @media (max-width: 1023px) {
+            /* 모바일 전용 UI */
+            .mobile-tab-bar { display: flex; position: fixed; bottom: 0; left: 0; right: 0; background: white; box-shadow: 0 -2px 10px rgba(0,0,0,0.1); z-index: 1000; }
+            .tab-btn { flex: 1; padding: 1rem; text-align: center; border: none; background: none; font-size: 1rem; font-weight: bold; color: var(--text-muted); cursor: pointer;}
+            .tab-btn.active { color: var(--primary); border-top: 3px solid var(--primary); background: #f8fafc;}
+            
+            .map-panel { display: none; } /* 맵 탭 활성화 전까지 숨김 */
+            .map-panel.active { display: block; position: fixed; top: 0; left: 0; right: 0; bottom: 53px; z-index: 100; background: white; padding: 0; }
+            #map { height: 100%; border-radius: 0; border: none; }
+            
+            .dashboard-panel.hidden { display: none; }
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="header-container">
             <div class="logo">
-                <h1><i class="fa-solid fa-baseball-bat-ball"></i> KBO 구장별 3일 직관 플래너</h1>
-                <p>경기 일정 및 기상 예보 종합 대시보드</p>
+                <h1><i class="fa-solid fa-baseball-bat-ball"></i> KBO 시간대별 대시보드</h1>
+                <p>1시간 간격 날씨 예보 및 즐겨찾기</p>
             </div>
         </div>
     </header>
 
     <div class="main-container">
-        <!-- 왼쪽: 경기 및 날씨 목록 -->
-        <div class="dashboard-panel">
+        <!-- 왼쪽: 리스트 패널 -->
+        <div class="dashboard-panel" id="listPanel">
+            <!-- 즐겨찾기 영역 -->
+            <div class="section-title"><i class="fa-solid fa-star" style="color: #ecc94b;"></i> My Team (즐겨찾기)</div>
+            <div id="fav-grid" class="stadium-grid" style="margin-bottom: 2rem;">
+                <!-- JS로 채워짐 -->
+            </div>
+
+            <!-- 전체 구장 영역 -->
             <div class="list-header">
-                <div class="section-title"><i class="fa-regular fa-calendar"></i> 구장별 3일 일정 & 날씨</div>
+                <div class="section-title" style="margin: 0;"><i class="fa-solid fa-cloud-sun-rain"></i> 전국 구장 날씨</div>
                 <select id="sortSelect" class="sort-select" onchange="changeSort()">
-                    <option value="custom">기본순</option>
+                    <option value="custom">북쪽 → 남쪽 (기본)</option>
                     <option value="name">팀명 가나다순</option>
                 </select>
             </div>
             <div id="stadium-grid" class="stadium-grid"></div>
         </div>
 
-        <!-- 오른쪽: 지도 -->
-        <div class="map-panel">
+        <!-- 오른쪽: 지도 패널 -->
+        <div class="map-panel" id="mapPanel">
             <div id="map"></div>
         </div>
+    </div>
+
+    <!-- 모바일 하단 탭바 -->
+    <div class="mobile-tab-bar">
+        <button class="tab-btn active" id="tabList" onclick="switchTab('list')"><i class="fa-solid fa-list"></i> 리스트 뷰</button>
+        <button class="tab-btn" id="tabMap" onclick="switchTab('map')"><i class="fa-solid fa-map-location-dot"></i> 지도 뷰</button>
     </div>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
@@ -82,10 +121,12 @@
         let map;
         let markers = {};
         let currentSort = 'custom';
+        
+        // 로컬스토리지에서 즐겨찾기 목록 불러오기
+        let favorites = JSON.parse(localStorage.getItem('kbo_favorites')) || [];
 
         async function fetchKboData() {
             try {
-                // 파이썬 봇이 생성한 kbo_data.json 읽어오기
                 const response = await fetch('kbo_data.json?' + new Date().getTime());
                 mockApiData = await response.json();
                 
@@ -93,21 +134,21 @@
                 renderCards();
             } catch (error) {
                 console.error("데이터 로드 실패:", error);
-                document.getElementById('stadium-grid').innerHTML = '<p style="padding: 2rem; color: #64748b;">데이터를 불러오는 중입니다. 파이썬 봇(GitHub Actions)이 실행 완료되었는지 확인해 주세요.</p>';
+                document.getElementById('stadium-grid').innerHTML = '<p style="padding: 2rem; color: #64748b;">데이터를 불러오는 중입니다. 파이썬 봇(GitHub Actions)이 완료되었는지 확인해 주세요.</p>';
             }
         }
 
         function initMap() {
-            if(map) map.remove(); // 기존 맵 초기화
+            if(map) map.remove(); 
             map = L.map('map').setView([36.3504, 127.3848], 7);
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; OpenStreetMap' }).addTo(map);
 
             mockApiData.forEach(stadium => {
                 const marker = L.marker([stadium.lat, stadium.lng]).addTo(map);
-                marker.bindPopup(`<b>${stadium.name}</b><br>${stadium.homeTeam} 홈구장`);
+                marker.bindPopup(`<b>${stadium.name}</b><br>${stadium.homeTeam}`);
                 
                 marker.on('click', () => {
-                    map.setView([stadium.lat, stadium.lng], 13);
+                    map.setView([stadium.lat, stadium.lng], 12);
                 });
                 markers[stadium.id] = marker;
             });
@@ -118,47 +159,126 @@
             renderCards();
         }
 
-        function renderCards() {
-            const grid = document.getElementById('stadium-grid');
-            grid.innerHTML = '';
-            
-            let dataToRender = [...mockApiData];
-            if (currentSort === 'name') {
-                dataToRender.sort((a, b) => a.homeTeam.localeCompare(b.homeTeam));
+        function toggleFavorite(id, event) {
+            event.stopPropagation(); // 카드 클릭 시 맵으로 넘어가는 이벤트 막기
+            if (favorites.includes(id)) {
+                favorites = favorites.filter(favId => favId !== id);
+            } else {
+                favorites.push(id);
             }
-            
-            dataToRender.forEach(stadium => {
-                // 3일치 예보를 HTML로 구성
-                let forecastHTML = '';
-                stadium.forecast.forEach(day => {
-                    const isToday = day.label === '오늘';
-                    forecastHTML += `
-                        <div class="day-col ${isToday ? 'today' : ''}">
-                            <div class="day-date">${day.label}<br>(${day.date})</div>
-                            <div class="day-weather" style="color: ${day.weather.color}">
-                                <i class="fa-solid ${day.weather.icon}"></i>
-                                <span>${day.weather.cond}</span>
-                            </div>
-                            <div class="day-game ${!day.hasGame ? 'no-game' : ''}">
-                                ${day.gameInfo}
-                            </div>
-                        </div>
-                    `;
-                });
+            localStorage.setItem('kbo_favorites', JSON.stringify(favorites));
+            renderCards(); // 별 모양과 즐겨찾기 영역 즉시 반영
+        }
 
-                const cardHTML = `
-                    <div class="stadium-card" onclick="map.setView([${stadium.lat}, ${stadium.lng}], 13); markers['${stadium.id}'].openPopup();">
-                        <div class="card-header">
-                            <div class="stadium-name">${stadium.name}</div>
-                            <div class="home-team"><i class="fa-solid fa-house"></i> ${stadium.homeTeam}</div>
-                        </div>
-                        <div class="forecast-container">
-                            ${forecastHTML}
+        // 카드 HTML 생성 헬퍼 함수
+        function createCardHTML(stadium) {
+            let weatherHTML = '';
+            stadium.hourly_forecast.forEach(timeData => {
+                const isNewDay = timeData.time === "00:00";
+                weatherHTML += `
+                    <div class="time-col ${isNewDay ? 'new-day' : ''}">
+                        ${isNewDay ? `<div class="day-label">${timeData.day_label}</div>` : ''}
+                        <div class="time-label">${timeData.time}</div>
+                        <div class="time-weather" style="color: ${timeData.weather.color}">
+                            <i class="fa-solid ${timeData.weather.icon}"></i>
+                            <span>${timeData.weather.cond}</span>
                         </div>
                     </div>
                 `;
+            });
+
+            const isFav = favorites.includes(stadium.id);
+            const starIcon = isFav ? 'fa-solid' : 'fa-regular';
+            const activeClass = isFav ? 'active' : '';
+
+            return `
+                <div class="stadium-card" onclick="focusOnMap(${stadium.lat}, ${stadium.lng}, '${stadium.id}')">
+                    <div class="card-header">
+                        <div>
+                            <div class="stadium-name">${stadium.name}</div>
+                            <div class="home-team">${stadium.homeTeam}</div>
+                        </div>
+                        <button class="fav-btn ${activeClass}" onclick="toggleFavorite('${stadium.id}', event)">
+                            <i class="${starIcon} fa-star"></i>
+                        </button>
+                    </div>
+                    <div class="weather-scroll-container">
+                        ${weatherHTML}
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderCards() {
+            const grid = document.getElementById('stadium-grid');
+            const favGrid = document.getElementById('fav-grid');
+            grid.innerHTML = '';
+            favGrid.innerHTML = '';
+            
+            let dataToRender = [...mockApiData];
+            
+            if (currentSort === 'name') {
+                dataToRender.sort((a, b) => a.homeTeam.localeCompare(b.homeTeam));
+            } else {
+                dataToRender.sort((a, b) => b.lat - a.lat);
+            }
+            
+            let favCount = 0;
+
+            dataToRender.forEach(stadium => {
+                const cardHTML = createCardHTML(stadium);
+                
+                // 즐겨찾기로 추가된 구장인 경우
+                if (favorites.includes(stadium.id)) {
+                    favGrid.innerHTML += cardHTML;
+                    favCount++;
+                }
+                
+                // 전체 리스트에는 항상 모든 구장 표시
                 grid.innerHTML += cardHTML;
             });
+
+            if (favCount === 0) {
+                favGrid.innerHTML = '<div class="no-fav-msg">카드의 우측 상단 별표(★)를 눌러 응원하는 팀을 추가해 보세요!</div>';
+            }
+        }
+
+        function focusOnMap(lat, lng, id) {
+            if (window.innerWidth < 1024) {
+                // 모바일 환경: 카드 클릭 시 지도 탭으로 부드럽게 화면 전환
+                switchTab('map');
+                setTimeout(() => {
+                    map.invalidateSize(); 
+                    map.setView([lat, lng], 12);
+                    markers[id].openPopup();
+                }, 100);
+            } else {
+                // PC 환경: 바로 우측 지도로 이동
+                map.setView([lat, lng], 12);
+                markers[id].openPopup();
+            }
+        }
+
+        // 모바일 탭 전환 로직
+        function switchTab(tabName) {
+            const listPanel = document.getElementById('listPanel');
+            const mapPanel = document.getElementById('mapPanel');
+            const tabList = document.getElementById('tabList');
+            const tabMap = document.getElementById('tabMap');
+
+            if (tabName === 'list') {
+                listPanel.classList.remove('hidden');
+                mapPanel.classList.remove('active');
+                tabList.classList.add('active');
+                tabMap.classList.remove('active');
+            } else {
+                listPanel.classList.add('hidden');
+                mapPanel.classList.add('active');
+                tabList.classList.remove('active');
+                tabMap.classList.add('active');
+                
+                setTimeout(() => map.invalidateSize(), 100);
+            }
         }
 
         window.onload = fetchKboData;
