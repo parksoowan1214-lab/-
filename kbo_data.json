@@ -2,6 +2,7 @@
   {
     "id": "jamsil",
     "name": "잠실야구장",
+    "address": "서울 송파구",
     "homeTeam": "LG 트윈스 / 두산 베어스",
     "lat": 37.5122,
     "lng": 127.0719,
@@ -10,32 +11,14 @@
         "day_label": "오늘",
         "time": "14:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "맑음",
+          "icon": "fa-sun",
+          "color": "#ecc94b"
         }
       },
       {
         "day_label": "오늘",
         "time": "15:00",
-        "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
-        }
-      },
-      {
-        "day_label": "오늘",
-        "time": "16:00",
-        "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
-        }
-      },
-      {
-        "day_label": "오늘",
-        "time": "17:00",
         "weather": {
           "cond": "흐림",
           "icon": "fa-cloud",
@@ -44,110 +27,137 @@
       },
       {
         "day_label": "오늘",
+        "time": "16:00",
+        "weather": {
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
+        }
+      },
+      {
+        "day_label": "오늘",
+        "time": "17:00",
+        "weather": {
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
+        }
+      },
+      {
+        "day_label": "오늘",
         "time": "18:00",
         "weather": {
           "cond": "구름많음",
           "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "color": "#94a3b8"
+        }
+      },
+      {
+        "day_label": "오늘",
+        "time": "18:30",
+        "weather": {
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "오늘",
         "time": "19:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "오늘",
         "time": "20:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "오늘",
         "time": "21:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "오늘",
         "time": "22:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "오늘",
         "time": "23:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "내일",
         "time": "00:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "내일",
         "time": "01:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "내일",
         "time": "02:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "내일",
         "time": "03:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "내일",
         "time": "04:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "내일",
         "time": "05:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
@@ -199,36 +209,36 @@
         "day_label": "내일",
         "time": "11:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "내일",
         "time": "12:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "내일",
         "time": "13:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "내일",
         "time": "14:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
@@ -244,117 +254,117 @@
         "day_label": "내일",
         "time": "16:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "내일",
         "time": "17:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "내일",
         "time": "18:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "내일",
         "time": "19:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "내일",
         "time": "20:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "내일",
         "time": "21:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "내일",
         "time": "22:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "내일",
         "time": "23:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "00:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "01:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "02:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "03:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "04:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
@@ -362,8 +372,8 @@
         "time": "05:00",
         "weather": {
           "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
@@ -372,7 +382,7 @@
         "weather": {
           "cond": "구름많음",
           "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "color": "#94a3b8"
         }
       },
       {
@@ -381,7 +391,7 @@
         "weather": {
           "cond": "구름많음",
           "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "color": "#94a3b8"
         }
       },
       {
@@ -390,7 +400,7 @@
         "weather": {
           "cond": "구름많음",
           "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "color": "#94a3b8"
         }
       },
       {
@@ -399,43 +409,43 @@
         "weather": {
           "cond": "구름많음",
           "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "10:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "11:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "12:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "13:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
@@ -444,7 +454,7 @@
         "weather": {
           "cond": "구름많음",
           "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "color": "#94a3b8"
         }
       },
       {
@@ -453,52 +463,52 @@
         "weather": {
           "cond": "구름많음",
           "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "16:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "17:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "18:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "19:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "20:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
@@ -514,27 +524,27 @@
         "day_label": "모레",
         "time": "22:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "23:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "",
         "time": "24:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       }
     ]
@@ -542,6 +552,7 @@
   {
     "id": "gocheok",
     "name": "고척 스카이돔",
+    "address": "서울 구로구",
     "homeTeam": "키움 히어로즈",
     "lat": 37.4982,
     "lng": 126.8671,
@@ -550,7 +561,7 @@
         "day_label": "오늘",
         "time": "14:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -559,7 +570,7 @@
         "day_label": "오늘",
         "time": "15:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -568,7 +579,7 @@
         "day_label": "오늘",
         "time": "16:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -577,7 +588,7 @@
         "day_label": "오늘",
         "time": "17:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -586,7 +597,16 @@
         "day_label": "오늘",
         "time": "18:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
+          "icon": "fa-building",
+          "color": "#3182ce"
+        }
+      },
+      {
+        "day_label": "오늘",
+        "time": "18:30",
+        "weather": {
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -595,7 +615,7 @@
         "day_label": "오늘",
         "time": "19:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -604,7 +624,7 @@
         "day_label": "오늘",
         "time": "20:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -613,7 +633,7 @@
         "day_label": "오늘",
         "time": "21:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -622,7 +642,7 @@
         "day_label": "오늘",
         "time": "22:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -631,7 +651,7 @@
         "day_label": "오늘",
         "time": "23:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -640,7 +660,7 @@
         "day_label": "내일",
         "time": "00:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -649,7 +669,7 @@
         "day_label": "내일",
         "time": "01:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -658,7 +678,7 @@
         "day_label": "내일",
         "time": "02:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -667,7 +687,7 @@
         "day_label": "내일",
         "time": "03:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -676,7 +696,7 @@
         "day_label": "내일",
         "time": "04:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -685,7 +705,7 @@
         "day_label": "내일",
         "time": "05:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -694,7 +714,7 @@
         "day_label": "내일",
         "time": "06:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -703,7 +723,7 @@
         "day_label": "내일",
         "time": "07:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -712,7 +732,7 @@
         "day_label": "내일",
         "time": "08:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -721,7 +741,7 @@
         "day_label": "내일",
         "time": "09:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -730,7 +750,7 @@
         "day_label": "내일",
         "time": "10:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -739,7 +759,7 @@
         "day_label": "내일",
         "time": "11:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -748,7 +768,7 @@
         "day_label": "내일",
         "time": "12:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -757,7 +777,7 @@
         "day_label": "내일",
         "time": "13:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -766,7 +786,7 @@
         "day_label": "내일",
         "time": "14:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -775,7 +795,7 @@
         "day_label": "내일",
         "time": "15:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -784,7 +804,7 @@
         "day_label": "내일",
         "time": "16:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -793,7 +813,7 @@
         "day_label": "내일",
         "time": "17:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -802,7 +822,7 @@
         "day_label": "내일",
         "time": "18:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -811,7 +831,7 @@
         "day_label": "내일",
         "time": "19:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -820,7 +840,7 @@
         "day_label": "내일",
         "time": "20:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -829,7 +849,7 @@
         "day_label": "내일",
         "time": "21:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -838,7 +858,7 @@
         "day_label": "내일",
         "time": "22:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -847,7 +867,7 @@
         "day_label": "내일",
         "time": "23:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -856,7 +876,7 @@
         "day_label": "모레",
         "time": "00:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -865,7 +885,7 @@
         "day_label": "모레",
         "time": "01:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -874,7 +894,7 @@
         "day_label": "모레",
         "time": "02:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -883,7 +903,7 @@
         "day_label": "모레",
         "time": "03:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -892,7 +912,7 @@
         "day_label": "모레",
         "time": "04:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -901,7 +921,7 @@
         "day_label": "모레",
         "time": "05:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -910,7 +930,7 @@
         "day_label": "모레",
         "time": "06:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -919,7 +939,7 @@
         "day_label": "모레",
         "time": "07:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -928,7 +948,7 @@
         "day_label": "모레",
         "time": "08:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -937,7 +957,7 @@
         "day_label": "모레",
         "time": "09:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -946,7 +966,7 @@
         "day_label": "모레",
         "time": "10:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -955,7 +975,7 @@
         "day_label": "모레",
         "time": "11:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -964,7 +984,7 @@
         "day_label": "모레",
         "time": "12:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -973,7 +993,7 @@
         "day_label": "모레",
         "time": "13:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -982,7 +1002,7 @@
         "day_label": "모레",
         "time": "14:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -991,7 +1011,7 @@
         "day_label": "모레",
         "time": "15:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -1000,7 +1020,7 @@
         "day_label": "모레",
         "time": "16:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -1009,7 +1029,7 @@
         "day_label": "모레",
         "time": "17:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -1018,7 +1038,7 @@
         "day_label": "모레",
         "time": "18:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -1027,7 +1047,7 @@
         "day_label": "모레",
         "time": "19:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -1036,7 +1056,7 @@
         "day_label": "모레",
         "time": "20:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -1045,7 +1065,7 @@
         "day_label": "모레",
         "time": "21:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -1054,7 +1074,7 @@
         "day_label": "모레",
         "time": "22:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -1063,7 +1083,7 @@
         "day_label": "모레",
         "time": "23:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -1072,7 +1092,7 @@
         "day_label": "",
         "time": "24:00",
         "weather": {
-          "cond": "실내(돔)",
+          "cond": "실내",
           "icon": "fa-building",
           "color": "#3182ce"
         }
@@ -1082,6 +1102,7 @@
   {
     "id": "incheon",
     "name": "인천 SSG 랜더스필드",
+    "address": "인천 미추홀구",
     "homeTeam": "SSG 랜더스",
     "lat": 37.4371,
     "lng": 126.6933,
@@ -1090,356 +1111,14 @@
         "day_label": "오늘",
         "time": "14:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "오늘",
         "time": "15:00",
-        "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
-        }
-      },
-      {
-        "day_label": "오늘",
-        "time": "16:00",
-        "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
-        }
-      },
-      {
-        "day_label": "오늘",
-        "time": "17:00",
-        "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
-        }
-      },
-      {
-        "day_label": "오늘",
-        "time": "18:00",
-        "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
-        }
-      },
-      {
-        "day_label": "오늘",
-        "time": "19:00",
-        "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
-        }
-      },
-      {
-        "day_label": "오늘",
-        "time": "20:00",
-        "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
-        }
-      },
-      {
-        "day_label": "오늘",
-        "time": "21:00",
-        "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
-        }
-      },
-      {
-        "day_label": "오늘",
-        "time": "22:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "오늘",
-        "time": "23:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "00:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "01:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "02:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "03:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "04:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "05:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "06:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "07:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "08:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "09:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "10:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "11:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "12:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "13:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "14:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "15:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "16:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "17:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "18:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "19:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "20:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "21:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "22:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "23:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "00:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "01:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "02:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "03:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "04:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "05:00",
         "weather": {
           "cond": "흐림",
           "icon": "fa-cloud",
@@ -1447,16 +1126,151 @@
         }
       },
       {
-        "day_label": "모레",
-        "time": "06:00",
+        "day_label": "오늘",
+        "time": "16:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
-        "day_label": "모레",
+        "day_label": "오늘",
+        "time": "17:00",
+        "weather": {
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
+        }
+      },
+      {
+        "day_label": "오늘",
+        "time": "18:00",
+        "weather": {
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
+        }
+      },
+      {
+        "day_label": "오늘",
+        "time": "18:30",
+        "weather": {
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
+        }
+      },
+      {
+        "day_label": "오늘",
+        "time": "19:00",
+        "weather": {
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
+        }
+      },
+      {
+        "day_label": "오늘",
+        "time": "20:00",
+        "weather": {
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
+        }
+      },
+      {
+        "day_label": "오늘",
+        "time": "21:00",
+        "weather": {
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
+        }
+      },
+      {
+        "day_label": "오늘",
+        "time": "22:00",
+        "weather": {
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
+        }
+      },
+      {
+        "day_label": "오늘",
+        "time": "23:00",
+        "weather": {
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "00:00",
+        "weather": {
+          "cond": "맑음",
+          "icon": "fa-moon",
+          "color": "#6366f1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "01:00",
+        "weather": {
+          "cond": "맑음",
+          "icon": "fa-moon",
+          "color": "#6366f1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "02:00",
+        "weather": {
+          "cond": "맑음",
+          "icon": "fa-moon",
+          "color": "#6366f1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "03:00",
+        "weather": {
+          "cond": "맑음",
+          "icon": "fa-moon",
+          "color": "#6366f1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "04:00",
+        "weather": {
+          "cond": "맑음",
+          "icon": "fa-moon",
+          "color": "#6366f1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "05:00",
+        "weather": {
+          "cond": "맑음",
+          "icon": "fa-moon",
+          "color": "#6366f1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "06:00",
+        "weather": {
+          "cond": "맑음",
+          "icon": "fa-sun",
+          "color": "#ecc94b"
+        }
+      },
+      {
+        "day_label": "내일",
         "time": "07:00",
         "weather": {
           "cond": "맑음",
@@ -1465,6 +1279,222 @@
         }
       },
       {
+        "day_label": "내일",
+        "time": "08:00",
+        "weather": {
+          "cond": "맑음",
+          "icon": "fa-sun",
+          "color": "#ecc94b"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "09:00",
+        "weather": {
+          "cond": "맑음",
+          "icon": "fa-sun",
+          "color": "#ecc94b"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "10:00",
+        "weather": {
+          "cond": "맑음",
+          "icon": "fa-sun",
+          "color": "#ecc94b"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "11:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "12:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "13:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "14:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "15:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "16:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "17:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "18:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "19:00",
+        "weather": {
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "20:00",
+        "weather": {
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "21:00",
+        "weather": {
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "22:00",
+        "weather": {
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "23:00",
+        "weather": {
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "00:00",
+        "weather": {
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "01:00",
+        "weather": {
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "02:00",
+        "weather": {
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "03:00",
+        "weather": {
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "04:00",
+        "weather": {
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "05:00",
+        "weather": {
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "06:00",
+        "weather": {
+          "cond": "맑음",
+          "icon": "fa-sun",
+          "color": "#ecc94b"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "07:00",
+        "weather": {
+          "cond": "맑음",
+          "icon": "fa-sun",
+          "color": "#ecc94b"
+        }
+      },
+      {
         "day_label": "모레",
         "time": "08:00",
         "weather": {
@@ -1522,77 +1552,14 @@
         "day_label": "모레",
         "time": "14:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "맑음",
+          "icon": "fa-sun",
+          "color": "#ecc94b"
         }
       },
       {
         "day_label": "모레",
         "time": "15:00",
-        "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "16:00",
-        "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "17:00",
-        "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "18:00",
-        "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "19:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "20:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "21:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "22:00",
         "weather": {
           "cond": "맑음",
           "icon": "fa-sun",
@@ -1601,20 +1568,83 @@
       },
       {
         "day_label": "모레",
+        "time": "16:00",
+        "weather": {
+          "cond": "맑음",
+          "icon": "fa-sun",
+          "color": "#ecc94b"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "17:00",
+        "weather": {
+          "cond": "맑음",
+          "icon": "fa-sun",
+          "color": "#ecc94b"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "18:00",
+        "weather": {
+          "cond": "맑음",
+          "icon": "fa-sun",
+          "color": "#ecc94b"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "19:00",
+        "weather": {
+          "cond": "맑음",
+          "icon": "fa-moon",
+          "color": "#6366f1"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "20:00",
+        "weather": {
+          "cond": "맑음",
+          "icon": "fa-moon",
+          "color": "#6366f1"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "21:00",
+        "weather": {
+          "cond": "맑음",
+          "icon": "fa-moon",
+          "color": "#6366f1"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "22:00",
+        "weather": {
+          "cond": "맑음",
+          "icon": "fa-moon",
+          "color": "#6366f1"
+        }
+      },
+      {
+        "day_label": "모레",
         "time": "23:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "맑음",
+          "icon": "fa-moon",
+          "color": "#6366f1"
         }
       },
       {
         "day_label": "",
         "time": "24:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "맑음",
+          "icon": "fa-moon",
+          "color": "#6366f1"
         }
       }
     ]
@@ -1622,6 +1652,7 @@
   {
     "id": "suwon",
     "name": "수원 kt 위즈파크",
+    "address": "경기 수원시",
     "homeTeam": "kt 위즈",
     "lat": 37.2998,
     "lng": 127.0101,
@@ -1630,117 +1661,126 @@
         "day_label": "오늘",
         "time": "14:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "오늘",
         "time": "15:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "오늘",
         "time": "16:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "오늘",
         "time": "17:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "오늘",
         "time": "18:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
+        }
+      },
+      {
+        "day_label": "오늘",
+        "time": "18:30",
+        "weather": {
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "오늘",
         "time": "19:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "오늘",
         "time": "20:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "오늘",
         "time": "21:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "오늘",
         "time": "22:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "오늘",
         "time": "23:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "내일",
         "time": "00:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "내일",
         "time": "01:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "내일",
         "time": "02:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
@@ -1748,8 +1788,8 @@
         "time": "03:00",
         "weather": {
           "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
@@ -1757,8 +1797,8 @@
         "time": "04:00",
         "weather": {
           "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
@@ -1766,8 +1806,8 @@
         "time": "05:00",
         "weather": {
           "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
@@ -1776,7 +1816,7 @@
         "weather": {
           "cond": "구름많음",
           "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "color": "#94a3b8"
         }
       },
       {
@@ -1785,52 +1825,52 @@
         "weather": {
           "cond": "구름많음",
           "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "내일",
         "time": "08:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "내일",
         "time": "09:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "내일",
         "time": "10:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "내일",
         "time": "11:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "내일",
         "time": "12:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
@@ -1839,7 +1879,7 @@
         "weather": {
           "cond": "구름많음",
           "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "color": "#94a3b8"
         }
       },
       {
@@ -1848,7 +1888,7 @@
         "weather": {
           "cond": "구름많음",
           "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "color": "#94a3b8"
         }
       },
       {
@@ -1857,7 +1897,7 @@
         "weather": {
           "cond": "구름많음",
           "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "color": "#94a3b8"
         }
       },
       {
@@ -1866,7 +1906,7 @@
         "weather": {
           "cond": "구름많음",
           "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "color": "#94a3b8"
         }
       },
       {
@@ -1875,52 +1915,52 @@
         "weather": {
           "cond": "구름많음",
           "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "내일",
         "time": "18:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "맑음",
+          "icon": "fa-sun",
+          "color": "#ecc94b"
         }
       },
       {
         "day_label": "내일",
         "time": "19:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "맑음",
+          "icon": "fa-moon",
+          "color": "#6366f1"
         }
       },
       {
         "day_label": "내일",
         "time": "20:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "맑음",
+          "icon": "fa-moon",
+          "color": "#6366f1"
         }
       },
       {
         "day_label": "내일",
         "time": "21:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "맑음",
+          "icon": "fa-moon",
+          "color": "#6366f1"
         }
       },
       {
         "day_label": "내일",
         "time": "22:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
@@ -1972,36 +2012,36 @@
         "day_label": "모레",
         "time": "04:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "모레",
         "time": "05:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "모레",
         "time": "06:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "모레",
         "time": "07:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "맑음",
+          "icon": "fa-sun",
+          "color": "#ecc94b"
         }
       },
       {
@@ -2010,106 +2050,106 @@
         "weather": {
           "cond": "구름많음",
           "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "09:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "10:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "11:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "12:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "13:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "14:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "15:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "16:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "17:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "18:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "19:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
@@ -2117,8 +2157,8 @@
         "time": "20:00",
         "weather": {
           "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "icon": "fa-moon",
+          "color": "#6366f1"
         }
       },
       {
@@ -2126,8 +2166,8 @@
         "time": "21:00",
         "weather": {
           "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "icon": "fa-moon",
+          "color": "#6366f1"
         }
       },
       {
@@ -2135,8 +2175,8 @@
         "time": "22:00",
         "weather": {
           "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "icon": "fa-moon",
+          "color": "#6366f1"
         }
       },
       {
@@ -2144,8 +2184,8 @@
         "time": "23:00",
         "weather": {
           "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "icon": "fa-moon",
+          "color": "#6366f1"
         }
       },
       {
@@ -2153,8 +2193,8 @@
         "time": "24:00",
         "weather": {
           "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "icon": "fa-moon",
+          "color": "#6366f1"
         }
       }
     ]
@@ -2162,6 +2202,7 @@
   {
     "id": "daejeon",
     "name": "대전 한화생명 이글스파크",
+    "address": "대전 중구",
     "homeTeam": "한화 이글스",
     "lat": 36.3172,
     "lng": 127.4292,
@@ -2170,63 +2211,72 @@
         "day_label": "오늘",
         "time": "14:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "맑음",
+          "icon": "fa-sun",
+          "color": "#ecc94b"
         }
       },
       {
         "day_label": "오늘",
         "time": "15:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "맑음",
+          "icon": "fa-sun",
+          "color": "#ecc94b"
         }
       },
       {
         "day_label": "오늘",
         "time": "16:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "맑음",
+          "icon": "fa-sun",
+          "color": "#ecc94b"
         }
       },
       {
         "day_label": "오늘",
         "time": "17:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "맑음",
+          "icon": "fa-sun",
+          "color": "#ecc94b"
         }
       },
       {
         "day_label": "오늘",
         "time": "18:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "맑음",
+          "icon": "fa-sun",
+          "color": "#ecc94b"
+        }
+      },
+      {
+        "day_label": "오늘",
+        "time": "18:30",
+        "weather": {
+          "cond": "맑음",
+          "icon": "fa-sun",
+          "color": "#ecc94b"
         }
       },
       {
         "day_label": "오늘",
         "time": "19:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "맑음",
+          "icon": "fa-moon",
+          "color": "#6366f1"
         }
       },
       {
         "day_label": "오늘",
         "time": "20:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "맑음",
+          "icon": "fa-moon",
+          "color": "#6366f1"
         }
       },
       {
@@ -2242,14 +2292,59 @@
         "day_label": "오늘",
         "time": "22:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "맑음",
+          "icon": "fa-moon",
+          "color": "#6366f1"
         }
       },
       {
         "day_label": "오늘",
         "time": "23:00",
+        "weather": {
+          "cond": "맑음",
+          "icon": "fa-moon",
+          "color": "#6366f1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "00:00",
+        "weather": {
+          "cond": "맑음",
+          "icon": "fa-moon",
+          "color": "#6366f1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "01:00",
+        "weather": {
+          "cond": "맑음",
+          "icon": "fa-moon",
+          "color": "#6366f1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "02:00",
+        "weather": {
+          "cond": "맑음",
+          "icon": "fa-moon",
+          "color": "#6366f1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "03:00",
+        "weather": {
+          "cond": "맑음",
+          "icon": "fa-moon",
+          "color": "#6366f1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "04:00",
         "weather": {
           "cond": "비",
           "icon": "fa-cloud-rain",
@@ -2258,6 +2353,177 @@
       },
       {
         "day_label": "내일",
+        "time": "05:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "06:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "07:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "08:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "09:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "10:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "11:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "12:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "13:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "14:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "15:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "16:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "17:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "18:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "19:00",
+        "weather": {
+          "cond": "맑음",
+          "icon": "fa-moon",
+          "color": "#6366f1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "20:00",
+        "weather": {
+          "cond": "맑음",
+          "icon": "fa-moon",
+          "color": "#6366f1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "21:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "22:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "23:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "모레",
         "time": "00:00",
         "weather": {
           "cond": "비",
@@ -2266,222 +2532,6 @@
         }
       },
       {
-        "day_label": "내일",
-        "time": "01:00",
-        "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "02:00",
-        "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "03:00",
-        "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "04:00",
-        "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "05:00",
-        "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "06:00",
-        "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "07:00",
-        "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "08:00",
-        "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "09:00",
-        "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "10:00",
-        "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "11:00",
-        "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "12:00",
-        "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "13:00",
-        "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "14:00",
-        "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "15:00",
-        "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "16:00",
-        "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "17:00",
-        "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "18:00",
-        "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "19:00",
-        "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "20:00",
-        "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "21:00",
-        "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "22:00",
-        "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "23:00",
-        "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "00:00",
-        "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
-        }
-      },
-      {
         "day_label": "모레",
         "time": "01:00",
         "weather": {
@@ -2494,9 +2544,9 @@
         "day_label": "모레",
         "time": "02:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
@@ -2504,8 +2554,8 @@
         "time": "03:00",
         "weather": {
           "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
@@ -2513,8 +2563,8 @@
         "time": "04:00",
         "weather": {
           "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
@@ -2522,179 +2572,179 @@
         "time": "05:00",
         "weather": {
           "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "06:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "맑음",
+          "icon": "fa-sun",
+          "color": "#ecc94b"
         }
       },
       {
         "day_label": "모레",
         "time": "07:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "08:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "09:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "10:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "11:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "12:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "13:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "14:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "15:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "16:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "17:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "18:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "19:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "20:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "21:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "22:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "23:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "",
         "time": "24:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       }
     ]
@@ -2702,6 +2752,7 @@
   {
     "id": "daegu",
     "name": "대구 삼성 라이온즈 파크",
+    "address": "대구 수성구",
     "homeTeam": "삼성 라이온즈",
     "lat": 35.8412,
     "lng": 128.6816,
@@ -2710,144 +2761,153 @@
         "day_label": "오늘",
         "time": "14:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "오늘",
         "time": "15:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "오늘",
         "time": "16:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "오늘",
         "time": "17:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "오늘",
         "time": "18:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
+        }
+      },
+      {
+        "day_label": "오늘",
+        "time": "18:30",
+        "weather": {
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "오늘",
         "time": "19:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "오늘",
         "time": "20:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "오늘",
         "time": "21:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "오늘",
         "time": "22:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "오늘",
         "time": "23:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "내일",
         "time": "00:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "내일",
         "time": "01:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "내일",
         "time": "02:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "내일",
         "time": "03:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "내일",
         "time": "04:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "내일",
         "time": "05:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
@@ -2856,7 +2916,7 @@
         "weather": {
           "cond": "구름많음",
           "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "color": "#94a3b8"
         }
       },
       {
@@ -2865,7 +2925,7 @@
         "weather": {
           "cond": "구름많음",
           "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "color": "#94a3b8"
         }
       },
       {
@@ -2874,138 +2934,102 @@
         "weather": {
           "cond": "구름많음",
           "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "내일",
         "time": "09:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "내일",
         "time": "10:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "내일",
         "time": "11:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "내일",
         "time": "12:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "내일",
         "time": "13:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "내일",
         "time": "14:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "내일",
         "time": "15:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "내일",
         "time": "16:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "내일",
         "time": "17:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "내일",
         "time": "18:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "내일",
         "time": "19:00",
-        "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "20:00",
-        "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "21:00",
-        "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "22:00",
-        "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "23:00",
         "weather": {
           "cond": "흐림",
           "icon": "fa-cloud",
@@ -3013,57 +3037,93 @@
         }
       },
       {
+        "day_label": "내일",
+        "time": "20:00",
+        "weather": {
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "21:00",
+        "weather": {
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "22:00",
+        "weather": {
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "23:00",
+        "weather": {
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
+        }
+      },
+      {
         "day_label": "모레",
         "time": "00:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "01:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "02:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "03:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "04:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
         "day_label": "모레",
         "time": "05:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
         }
       },
       {
@@ -3188,8 +3248,8 @@
         "time": "19:00",
         "weather": {
           "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "icon": "fa-moon",
+          "color": "#6366f1"
         }
       },
       {
@@ -3197,8 +3257,8 @@
         "time": "20:00",
         "weather": {
           "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "icon": "fa-moon",
+          "color": "#6366f1"
         }
       },
       {
@@ -3206,8 +3266,8 @@
         "time": "21:00",
         "weather": {
           "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "icon": "fa-moon",
+          "color": "#6366f1"
         }
       },
       {
@@ -3215,26 +3275,26 @@
         "time": "22:00",
         "weather": {
           "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "icon": "fa-moon",
+          "color": "#6366f1"
         }
       },
       {
         "day_label": "모레",
         "time": "23:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "",
         "time": "24:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       }
     ]
@@ -3242,6 +3302,7 @@
   {
     "id": "gwangju",
     "name": "광주-기아 챔피언스 필드",
+    "address": "광주 북구",
     "homeTeam": "KIA 타이거즈",
     "lat": 35.1682,
     "lng": 126.8891,
@@ -3250,144 +3311,153 @@
         "day_label": "오늘",
         "time": "14:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "오늘",
         "time": "15:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "오늘",
         "time": "16:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "오늘",
         "time": "17:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "오늘",
         "time": "18:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
+        }
+      },
+      {
+        "day_label": "오늘",
+        "time": "18:30",
+        "weather": {
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "오늘",
         "time": "19:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "오늘",
         "time": "20:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "오늘",
         "time": "21:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "오늘",
         "time": "22:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "오늘",
         "time": "23:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "내일",
         "time": "00:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "내일",
         "time": "01:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "내일",
         "time": "02:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "내일",
         "time": "03:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "내일",
         "time": "04:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "내일",
         "time": "05:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
@@ -3403,72 +3473,72 @@
         "day_label": "내일",
         "time": "07:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "내일",
         "time": "08:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "내일",
         "time": "09:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "내일",
         "time": "10:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "내일",
         "time": "11:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "내일",
         "time": "12:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "내일",
         "time": "13:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "내일",
         "time": "14:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
@@ -3484,99 +3554,99 @@
         "day_label": "내일",
         "time": "16:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "내일",
         "time": "17:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "내일",
         "time": "18:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "내일",
         "time": "19:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "내일",
         "time": "20:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "내일",
         "time": "21:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "내일",
         "time": "22:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "내일",
         "time": "23:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "00:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "01:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "02:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
@@ -3646,135 +3716,135 @@
         "day_label": "모레",
         "time": "10:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "11:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "12:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "13:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "14:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "15:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "16:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "17:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "18:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "19:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "20:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "21:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "22:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "23:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "",
         "time": "24:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       }
     ]
@@ -3782,6 +3852,7 @@
   {
     "id": "changwon",
     "name": "창원 NC 파크",
+    "address": "경남 창원시",
     "homeTeam": "NC 다이노스",
     "lat": 35.2232,
     "lng": 128.583,
@@ -3790,108 +3861,117 @@
         "day_label": "오늘",
         "time": "14:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "오늘",
         "time": "15:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "오늘",
         "time": "16:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "오늘",
         "time": "17:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "오늘",
         "time": "18:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "오늘",
+        "time": "18:30",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "오늘",
         "time": "19:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "오늘",
         "time": "20:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "오늘",
         "time": "21:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "오늘",
         "time": "22:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "오늘",
         "time": "23:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "내일",
         "time": "00:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "내일",
         "time": "01:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
@@ -3979,9 +4059,9 @@
         "day_label": "내일",
         "time": "11:00",
         "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
+          "cond": "맑음",
+          "icon": "fa-sun",
+          "color": "#ecc94b"
         }
       },
       {
@@ -4033,288 +4113,288 @@
         "day_label": "내일",
         "time": "17:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "내일",
         "time": "18:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "내일",
         "time": "19:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "내일",
         "time": "20:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "내일",
         "time": "21:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "내일",
         "time": "22:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "내일",
         "time": "23:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "00:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "01:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "02:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "03:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "04:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "05:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "06:00",
         "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "07:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "08:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "09:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "10:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "11:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "12:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "13:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "14:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "15:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "16:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "17:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "18:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "19:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "20:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "21:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "22:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "모레",
         "time": "23:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "",
         "time": "24:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       }
     ]
@@ -4322,6 +4402,7 @@
   {
     "id": "sajik",
     "name": "사직야구장",
+    "address": "부산 동래구",
     "homeTeam": "롯데 자이언츠",
     "lat": 35.1944,
     "lng": 129.061,
@@ -4330,531 +4411,540 @@
         "day_label": "오늘",
         "time": "14:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "오늘",
         "time": "15:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "오늘",
         "time": "16:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "오늘",
         "time": "17:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "오늘",
         "time": "18:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
+        }
+      },
+      {
+        "day_label": "오늘",
+        "time": "18:30",
+        "weather": {
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "오늘",
         "time": "19:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "오늘",
         "time": "20:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "오늘",
         "time": "21:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "오늘",
         "time": "22:00",
         "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
         }
       },
       {
         "day_label": "오늘",
-        "time": "23:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "00:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "01:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "02:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "03:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "04:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "05:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "06:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "07:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "08:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "09:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "10:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "11:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "12:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "13:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "14:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "15:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "16:00",
-        "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "17:00",
-        "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "18:00",
-        "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "19:00",
-        "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "20:00",
-        "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "21:00",
-        "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "22:00",
-        "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
-        }
-      },
-      {
-        "day_label": "내일",
-        "time": "23:00",
-        "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "00:00",
-        "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "01:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "02:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "03:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "04:00",
-        "weather": {
-          "cond": "구름많음",
-          "icon": "fa-cloud-sun",
-          "color": "#a0aec0"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "05:00",
-        "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "06:00",
-        "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "07:00",
-        "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "08:00",
-        "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "09:00",
-        "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "10:00",
-        "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "11:00",
-        "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "12:00",
-        "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "13:00",
-        "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "14:00",
-        "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "15:00",
-        "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "16:00",
-        "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "17:00",
-        "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "18:00",
-        "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "19:00",
-        "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "20:00",
-        "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "21:00",
-        "weather": {
-          "cond": "비",
-          "icon": "fa-cloud-rain",
-          "color": "#4299e1"
-        }
-      },
-      {
-        "day_label": "모레",
-        "time": "22:00",
-        "weather": {
-          "cond": "맑음",
-          "icon": "fa-sun",
-          "color": "#ecc94b"
-        }
-      },
-      {
-        "day_label": "모레",
         "time": "23:00",
         "weather": {
           "cond": "흐림",
           "icon": "fa-cloud",
           "color": "#718096"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "00:00",
+        "weather": {
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "01:00",
+        "weather": {
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "02:00",
+        "weather": {
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "03:00",
+        "weather": {
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "04:00",
+        "weather": {
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "05:00",
+        "weather": {
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "06:00",
+        "weather": {
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "07:00",
+        "weather": {
+          "cond": "흐림",
+          "icon": "fa-cloud",
+          "color": "#718096"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "08:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "09:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "10:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "11:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "12:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "13:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "14:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "15:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "16:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "17:00",
+        "weather": {
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "18:00",
+        "weather": {
+          "cond": "구름많음",
+          "icon": "fa-cloud-sun",
+          "color": "#94a3b8"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "19:00",
+        "weather": {
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "20:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "21:00",
+        "weather": {
+          "cond": "맑음",
+          "icon": "fa-moon",
+          "color": "#6366f1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "22:00",
+        "weather": {
+          "cond": "맑음",
+          "icon": "fa-moon",
+          "color": "#6366f1"
+        }
+      },
+      {
+        "day_label": "내일",
+        "time": "23:00",
+        "weather": {
+          "cond": "맑음",
+          "icon": "fa-moon",
+          "color": "#6366f1"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "00:00",
+        "weather": {
+          "cond": "맑음",
+          "icon": "fa-moon",
+          "color": "#6366f1"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "01:00",
+        "weather": {
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "02:00",
+        "weather": {
+          "cond": "구름많음",
+          "icon": "fa-cloud-moon",
+          "color": "#94a3b8"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "03:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "04:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "05:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "06:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "07:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "08:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "09:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "10:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "11:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "12:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "13:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "14:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "15:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "16:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "17:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "18:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "19:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "20:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "21:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "22:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
+        }
+      },
+      {
+        "day_label": "모레",
+        "time": "23:00",
+        "weather": {
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       },
       {
         "day_label": "",
         "time": "24:00",
         "weather": {
-          "cond": "흐림",
-          "icon": "fa-cloud",
-          "color": "#718096"
+          "cond": "비",
+          "icon": "fa-cloud-rain",
+          "color": "#4299e1"
         }
       }
     ]
