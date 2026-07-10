@@ -4,17 +4,17 @@ import random
 
 now = datetime.now()
 
-# KBO 1군 전체 야구장 (북->남 정렬을 위해 lat 값이 중요)
+# KBO 1군 전체 야구장 (address 데이터 추가, 북->남 정렬을 위해 lat 순)
 stadiums = [
-    {"id": "jamsil", "name": "잠실야구장", "team": "LG 트윈스 / 두산 베어스", "lat": 37.5122, "lng": 127.0719},
-    {"id": "gocheok", "name": "고척 스카이돔", "team": "키움 히어로즈", "lat": 37.4982, "lng": 126.8671, "dome": True},
-    {"id": "incheon", "name": "인천 SSG 랜더스필드", "team": "SSG 랜더스", "lat": 37.4371, "lng": 126.6933},
-    {"id": "suwon", "name": "수원 kt 위즈파크", "team": "kt 위즈", "lat": 37.2998, "lng": 127.0101},
-    {"id": "daejeon", "name": "대전 한화생명 이글스파크", "team": "한화 이글스", "lat": 36.3172, "lng": 127.4292},
-    {"id": "daegu", "name": "대구 삼성 라이온즈 파크", "team": "삼성 라이온즈", "lat": 35.8412, "lng": 128.6816},
-    {"id": "gwangju", "name": "광주-기아 챔피언스 필드", "team": "KIA 타이거즈", "lat": 35.1682, "lng": 126.8891},
-    {"id": "changwon", "name": "창원 NC 파크", "team": "NC 다이노스", "lat": 35.2232, "lng": 128.5830},
-    {"id": "sajik", "name": "사직야구장", "team": "롯데 자이언츠", "lat": 35.1944, "lng": 129.0610}
+    {"id": "jamsil", "name": "잠실야구장", "address": "서울 송파구", "team": "LG 트윈스 / 두산 베어스", "lat": 37.5122, "lng": 127.0719},
+    {"id": "gocheok", "name": "고척 스카이돔", "address": "서울 구로구", "team": "키움 히어로즈", "lat": 37.4982, "lng": 126.8671, "dome": True},
+    {"id": "incheon", "name": "인천 SSG 랜더스필드", "address": "인천 미추홀구", "team": "SSG 랜더스", "lat": 37.4371, "lng": 126.6933},
+    {"id": "suwon", "name": "수원 kt 위즈파크", "address": "경기 수원시", "team": "kt 위즈", "lat": 37.2998, "lng": 127.0101},
+    {"id": "daejeon", "name": "대전 한화생명 이글스파크", "address": "대전 중구", "team": "한화 이글스", "lat": 36.3172, "lng": 127.4292},
+    {"id": "daegu", "name": "대구 삼성 라이온즈 파크", "address": "대구 수성구", "team": "삼성 라이온즈", "lat": 35.8412, "lng": 128.6816},
+    {"id": "gwangju", "name": "광주-기아 챔피언스 필드", "address": "광주 북구", "team": "KIA 타이거즈", "lat": 35.1682, "lng": 126.8891},
+    {"id": "changwon", "name": "창원 NC 파크", "address": "경남 창원시", "team": "NC 다이노스", "lat": 35.2232, "lng": 128.5830},
+    {"id": "sajik", "name": "사직야구장", "address": "부산 동래구", "team": "롯데 자이언츠", "lat": 35.1944, "lng": 129.0610}
 ]
 
 weather_presets = [
@@ -24,13 +24,15 @@ weather_presets = [
     {"cond": "비", "icon": "fa-cloud-rain", "color": "#4299e1"}
 ]
 
-# 오늘 14시 ~ 모레 24시 시간표 생성 (1시간 간격)
+# 시간표 생성 (1시간 간격 및 18:30 추가)
 time_slots = []
 current_day = "오늘"
 
-# 1. 오늘 14:00 ~ 23:00
+# 1. 오늘 14:00 ~ 23:00 (중간에 18:30 껴넣기)
 for hour in range(14, 24, 1):
     time_slots.append({"day_label": current_day, "time": f"{hour:02d}:00"})
+    if hour == 18:
+        time_slots.append({"day_label": current_day, "time": "18:30"})
 
 # 2. 내일 00:00 ~ 23:00
 current_day = "내일"
@@ -41,23 +43,18 @@ for hour in range(0, 24, 1):
 current_day = "모레"
 for hour in range(0, 24, 1):
     time_slots.append({"day_label": current_day, "time": f"{hour:02d}:00"})
-# 모레 24시 추가
 time_slots.append({"day_label": "", "time": "24:00"})
-
 
 kbo_data = []
 
 for stadium in stadiums:
     hourly_forecast = []
-    
-    # 돔구장은 전체 시간을 실내 상태로 유지, 실외는 약간의 변동성(랜덤) 부여
     base_weather = random.choice(weather_presets)
     
     for slot in time_slots:
         if stadium.get("dome"):
             w = {"cond": "실내(돔)", "icon": "fa-building", "color": "#3182ce"}
         else:
-            # 시간대별로 20% 확률로 날씨가 변하도록 시뮬레이션
             if random.random() < 0.2:
                 base_weather = random.choice(weather_presets)
             w = base_weather
@@ -71,6 +68,7 @@ for stadium in stadiums:
     kbo_data.append({
         "id": stadium["id"],
         "name": stadium["name"],
+        "address": stadium["address"], # 새로 추가된 주소 데이터
         "homeTeam": stadium["team"],
         "lat": stadium["lat"],
         "lng": stadium["lng"],
